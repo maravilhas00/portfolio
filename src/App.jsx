@@ -1,120 +1,107 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import project1 from '/Users/maravilhas/.gemini/antigravity/brain/3a7b9ce2-28da-49fd-9757-71818a212b16/project_placeholder_1_1773358649737.png'
+import project2 from '/Users/maravilhas/.gemini/antigravity/brain/3a7b9ce2-28da-49fd-9757-71818a212b16/project_placeholder_2_1773358671549.png'
+import project3 from '/Users/maravilhas/.gemini/antigravity/brain/3a7b9ce2-28da-49fd-9757-71818a212b16/project_placeholder_3_1773358685222.png'
+
+const projects = [
+  {
+    title: "Financify Dashboard",
+    description: "Plataforma de gestão financeira robusta com visualização de dados em tempo real.",
+    tags: ["React", "D3.js", "Node.js"],
+    image: project1
+  },
+  {
+    title: "Aurélien Luxury",
+    description: "E-commerce premium para relógios de luxo com experiência de compra imersiva.",
+    tags: ["Next.js", "Shopify", "Motion"],
+    image: project2
+  },
+  {
+    title: "Flux Digital Landing",
+    description: "Página de destino criativa para agências focada em conversão e design arrojado.",
+    tags: ["React", "Three.js", "GSAP"],
+    image: project3
+  }
+];
+
+const services = [
+  {
+    title: "Landing Pages",
+    description: "Páginas de alta conversão desenhadas para transformar visitantes em clientes.",
+    icon: "🚀"
+  },
+  {
+    title: "Web Apps Customizados",
+    description: "Soluções complexas e escaláveis utilizando as tecnologias mais modernas.",
+    icon: "💻"
+  },
+  {
+    title: "E-commerce",
+    description: "Lojas online completas com foco em performance e experiência do utilizador.",
+    icon: "🛍️"
+  }
+];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <main>
+      <header style={{ padding: '2rem 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ fontWeight: 700, fontSize: '1.5rem', fontFamily: 'var(--font-heading)' }}>MARAVILHAS</div>
+        <nav>
+          <a href="#services" className="btn-primary" style={{ padding: '0.5rem 1.5rem', background: 'transparent', border: '1px solid var(--glass-border)', boxShadow: 'none' }}>Serviços</a>
+        </nav>
+      </header>
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+      <section id="hero" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1>Transformo ideias em experiências digitais.</h1>
+        <p>Desenvolvedor Full-stack especializado em criar interfaces premium, rápidas e impactantes para o seu negócio.</p>
+        <div style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem' }}>
+          <a href="#projects" className="btn-primary">Ver Projetos</a>
+          <a href="#contact" className="btn-primary" style={{ background: 'rgba(255,255,255,0.05)', color: '#fff', boxShadow: 'none', border: '1px solid var(--glass-border)' }}>Contactar</a>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      <section id="projects">
+        <h2 style={{ textAlign: 'center' }}>Projetos Selecionados</h2>
+        <div className="grid">
+          {projects.map((project, i) => (
+            <div key={i} className="glass-card" style={{ overflow: 'hidden' }}>
+              <img src={project.image} alt={project.title} style={{ width: '100%', height: '240px', objectFit: 'cover' }} />
+              <div style={{ padding: '1.5rem' }}>
+                <h3 style={{ marginBottom: '0.5rem' }}>{project.title}</h3>
+                <p style={{ fontSize: '0.95rem', marginBottom: '1.2rem' }}>{project.description}</p>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {project.tags.map(tag => <span key={tag} className="badge">{tag}</span>)}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="services">
+        <h2 style={{ textAlign: 'center' }}>Serviços que Ofereço</h2>
+        <div className="grid">
+          {services.map((service, i) => (
+            <div key={i} className="glass-card" style={{ padding: '2rem', textAlign: 'center' }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>{service.icon}</div>
+              <h3 style={{ marginBottom: '1rem' }}>{service.title}</h3>
+              <p style={{ fontSize: '0.95rem' }}>{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" className="glass-card" style={{ margin: '4rem 0', padding: '4rem', textAlign: 'center', border: '1px solid var(--accent)' }}>
+        <h2>Vamos trabalhar juntos?</h2>
+        <p style={{ margin: '0 auto 2rem' }}>Estou disponível para novos projetos e colaborações. Entre em contacto para discutirmos a sua ideia.</p>
+        <a href="mailto:contato@exemplo.com" className="btn-primary">Enviar Email</a>
+      </section>
+
+      <footer style={{ paddingBottom: '4rem', textAlign: 'center', borderTop: '1px solid var(--glass-border)', paddingTop: '2rem' }}>
+        <p style={{ fontSize: '0.9rem' }}>&copy; 2024 Maravilhas Portfolio. Construído com React & Vite.</p>
+      </footer>
+    </main>
   )
 }
 
