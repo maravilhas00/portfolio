@@ -53,8 +53,8 @@ function App() {
       </header>
 
       <section id="hero" style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <h1>Transformo ideias em experiências digitais.</h1>
-        <p>Desenvolvedor Full-stack especializado em criar interfaces premium, rápidas e impactantes para o seu negócio.</p>
+        <h1>Transformo ideias em experiências digitais</h1>
+        <p>Experiência comprovada na construção de websites que atraem novos clientes ao negócio.</p>
         <div style={{ marginTop: '2.5rem', display: 'flex', gap: '1rem' }}>
           <a href="#projects" className="btn-primary">Ver Projetos</a>
           <a href="#contact" className="btn-primary" style={{ background: 'rgba(255,255,255,0.05)', color: '#fff', boxShadow: 'none', border: '1px solid var(--glass-border)' }}>Contactar</a>
@@ -62,7 +62,7 @@ function App() {
       </section>
 
       <section id="projects">
-        <h2 style={{ textAlign: 'center' }}>Projetos Selecionados</h2>
+        <h2 style={{ textAlign: 'center' }}>Exemplos de projetos</h2>
         <div className="grid">
           {projects.map((project, i) => (
             <div key={i} className="glass-card" style={{ overflow: 'hidden' }}>
@@ -80,7 +80,7 @@ function App() {
       </section>
 
       <section id="services">
-        <h2 style={{ textAlign: 'center' }}>Serviços que Ofereço</h2>
+        <h2 style={{ textAlign: 'center' }}>Serviços</h2>
         <div className="grid">
           {services.map((service, i) => (
             <div key={i} className="glass-card" style={{ padding: '2rem', textAlign: 'center' }}>
@@ -95,11 +95,11 @@ function App() {
       <section id="contact" className="glass-card" style={{ margin: '4rem 0', padding: '4rem', textAlign: 'center', border: '1px solid var(--accent)' }}>
         <h2>Vamos trabalhar juntos?</h2>
         <p style={{ margin: '0 auto 2rem' }}>Estou disponível para novos projetos e colaborações. Entre em contacto para discutirmos a sua ideia.</p>
-        <a href="mailto:contato@exemplo.com" className="btn-primary">Enviar Email</a>
+        <a href="mailto:wondersdev00@gmail.com" className="btn-primary">Enviar Email</a>
       </section>
 
       <footer style={{ paddingBottom: '4rem', textAlign: 'center', borderTop: '1px solid var(--glass-border)', paddingTop: '2rem' }}>
-        <p style={{ fontSize: '0.9rem' }}>&copy; 2024 Maravilhas Portfolio. Construído com React & Vite.</p>
+        <p style={{ fontSize: '0.9rem' }}>&copy; 2026 Wonders Portfolio.</p>
       </footer>
     </main>
   )
