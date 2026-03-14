@@ -1,7 +1,7 @@
 import './App.css'
-import project1 from '/Users/maravilhas/.gemini/antigravity/brain/3a7b9ce2-28da-49fd-9757-71818a212b16/project_placeholder_1_1773358649737.png'
-import project2 from '/Users/maravilhas/.gemini/antigravity/brain/3a7b9ce2-28da-49fd-9757-71818a212b16/project_placeholder_2_1773358671549.png'
-import project3 from '/Users/maravilhas/.gemini/antigravity/brain/3a7b9ce2-28da-49fd-9757-71818a212b16/project_placeholder_3_1773358685222.png'
+import project1 from './assets/project1.png'
+import project2 from './assets/project2.png'
+import project3 from './assets/project3.png'
 
 const projects = [
   {
