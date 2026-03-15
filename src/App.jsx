@@ -2,6 +2,7 @@ import './App.css'
 import project1 from './assets/project1.png'
 import project2 from './assets/project2.png'
 import project3 from './assets/project3.png'
+import logoWonders from './assets/logo_wonders.png'
 
 const projects = [
   {
@@ -46,7 +47,7 @@ function App() {
   return (
     <main>
       <header style={{ padding: '2rem 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ fontWeight: 700, fontSize: '1.5rem', fontFamily: 'var(--font-heading)' }}>MARAVILHAS</div>
+        <img src={logoWonders} alt="Wonders Logo" style={{ height: '40px' }} />
         <nav>
           <a href="#services" className="btn-primary" style={{ padding: '0.5rem 1.5rem', background: 'transparent', border: '1px solid var(--glass-border)', boxShadow: 'none' }}>Serviços</a>
         </nav>
